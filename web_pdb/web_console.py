@@ -108,6 +108,10 @@ class WebConsole(object):
         self._server_thread.start()
 
     @property
+    def encoding(self):
+        return "utf-8"
+
+    @property
     def seekable(self):
         return False
 
